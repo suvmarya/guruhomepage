@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@1,700&family=Balsamiq+Sans:ital,wght@0,700;1,400&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #efefef;
+}
+
+
+#navbar-1{
+    /* border: 2px solid red; */
+    display:flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: absolute;
+    position: sticky;
+    margin: 5px 100px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Averia Sans Libre', cursive;
+    
+}
+ /* #logo{
+    margin: 10px 10px;
+}  */
+/* #logo img{
+     height: 52px; 
+     margin: 5px 6px; 
+
+
+    
+} */
+
+#navbar-1 ul{
+    display: flex;
+    padding-left: 25px;
+
+}
+#navbar-1 ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar-1 ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+}
+#navbar-2{
+    /* border: 2px solid black; */
+    position: relative;
+    float: right;
+    display: flex;
+    padding-left: 200px;
+    font-size: 1.2rem;
+    font-weight:550 ;
+}
+#sign{
+    padding-right: 20px;
+}
+#sign:hover{
+    cursor: pointer;
+    color: gray;
+}
+#login:hover{
+    cursor: pointer;
+    color:purple;
+}
+
+/* Section Part  */
+#home{
+    /* border: 3px solid yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 100px; */
+    color: whitesmoke;
+    
+
+}
+
+#home::before{
+    content: "";
+    background: url(../img/bg5.jpeg) no-repeat center center/cover  ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1; /*jo content h wo background ke  upar aa jaega*/
+    opacity: 0.89;
+}
+#home h1{
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align: justify;
+    font-size: 50px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#home p{
+    margin-top: 20px;
+    margin-left: 100px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#home button{
+    width:150px;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding:8px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:#555555;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: justify;
+
+}
+
+#home button:hover{
+    background-color: black;
+    transition-duration: 0.4s;
+}
+
+footer {
+     position: fixed;
+    left: 0;
+    bottom: 0;
+    right:0;
+    
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  }
+
+
+
+  /* Responsive using media query  */
